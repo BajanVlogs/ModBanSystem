@@ -1,7 +1,7 @@
 # ModBanSystem
 This is a PMMP ban plugin
 
-
+[![](https://poggit.pmmp.io/shield.state/ModBanSystem)](https://poggit.pmmp.io/p/ModBanSystem)
 
 /modban {player} {days} {reason}   This is how you ban people
 
