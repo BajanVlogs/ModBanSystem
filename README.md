@@ -24,3 +24,7 @@ permissions
  mod.warn
  mod.permban
  mod.unban
+ 
+ 
+ 
+ FreakingDev is a freaking scammers this is not his plugin as lots of code has changed
