@@ -27,4 +27,4 @@ permissions
  
  
  
- FreakingDev is a freaking scammers this is not his plugin as lots of code has changed
+ Made by Freakingdev Uploaded by BajanVlogs and fixed
