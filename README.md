@@ -3,28 +3,31 @@ This is a PMMP ban plugin
 
 [![](https://poggit.pmmp.io/shield.state/ModBanSystem)](https://poggit.pmmp.io/p/ModBanSystem)
 
-/modban {player} {days} {reason}   This is how you ban people
+## Commands
 
-/checkmodbans {player}    This checks all player bans
+- `/modban {player} {days} {reason}`: Ban a player for a specified number of days with a reason.
+- `/checkmodbans {player}`: Check all bans for a specific player.
+- `/warn {player} {reason}`: Warn a player for a specific reason.
+- `/warns {player}`: Check all warnings for a specific player.
+- `/permban {player} {reason}`: Permanently ban a player with a reason.
+- `/unban {player}`: Unban a player from the server.
 
-/warn {player} {reason}  This will warn the player
+## GUI Support
 
-/warns {player}   This will check all players warnings
+Now, the plugin includes full GUI support for the ban system. Use the following command to access the GUI:
 
-/permban {player} {reason}    This Will ban the player forever
+- `/modbansystem`: Execute this command to open the GUI interface for managing bans and warnings.
 
-/unban {player}   Will unban the player from the server
+## Permissions
 
-All commands are for op players
+- `mod.modban`: Permission to use the `/modban` command.
+- `mod.modbans`: Permission to use the `/checkmodbans` command.
+- `mod.warn`: Permission to use the `/warn` command.
+- `mod.permban`: Permission to use the `/permban` command.
+- `mod.unban`: Permission to use the `/unban` command.
 
-permissions
+## Credits
 
- mod.modban
- mod.modbans
- mod.warn
- mod.permban
- mod.unban
- 
- 
- 
- Made by Freakingdev Uploaded by BajanVlogs and fixed
+- Made by Freakingdev
+- Uploaded by BajanVlogs
+- Fixed by BajanVlogs
