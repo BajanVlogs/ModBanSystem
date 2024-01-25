@@ -1,7 +1,7 @@
 name: ModBanSystem
 version: 1.0.0
 api: 5.0.0 , 4.0.0 , 5.1.0
-main: ModBanSystem\Main
+main: BanSystem\Main
 commands:
   bansystem:
     description: Manage bans
