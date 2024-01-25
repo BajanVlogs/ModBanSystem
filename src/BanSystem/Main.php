@@ -10,7 +10,7 @@ class Main extends PluginBase {
 
     private $banManager;
 
-    public function onEnable() {
+    public function onEnable(): void {
         $this->getLogger()->info("BanSystem has been enabled!");
 
         $this->saveDefaultConfig();
@@ -18,7 +18,7 @@ class Main extends PluginBase {
         $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
     }
 
-    public function onDisable() {
+    public function onDisable(): void {
         $this->getLogger()->info("BanSystem has been disabled!");
     }
 
