@@ -1,55 +1,11 @@
-name: ModBanSystem
-main: ModBanSystem\Main
+name: BanSystem
 version: 1.0.0
-api: [5.0.0]
-author: BajanVlogs, FreakingDev
-description: "Mod Ban System"
-
+main: BanSystem\Main
+api: [3.0.0, 4.0.0]
+author: BajanDoesYT
+description: A Minecraft plugin with GUI ban system.
 commands:
- modbansystem:
-    description: "ModBan"
-    permission: mod.modban
-    
- modbans:
-    description: "ModBans"
-    permission: mod.modbansystem
-
- checkmodban:
-    description: "Check ModBan status"
- 
- warn:
-    description: "Warn"
-    permission: mod.warn
- 
- warns:
-    description: "Warns"
-
- permban:
-    description: "PermBan"
-    permission: mod.permban
-    
- unban:
-    description: "Unban"
-    permission: mod.unban
-
-permissions:
- mod.modban:
-  default: op
-  description: ModBan permission
-  
- mod.modbans:
-  default: op
-  description: ModBans permission
-  
- mod.warn:
-  default: op
-  description: Warn permission
-  
- mod.permban:
-  default: op
-  description: PermBan permission
-
- mod.unban:
-  default: op
-  description: Unban permission
+  bansystem:
+    description: Open the Ban System GUI
+    usage: /bansystem
 
