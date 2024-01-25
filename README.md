@@ -1,33 +1,6 @@
-# ModBanSystem
-This is a PMMP ban plugin
+Install the FormAPI library:
 
-[![](https://poggit.pmmp.io/shield.state/ModBanSystem)](https://poggit.pmmp.io/p/ModBanSystem)
+Download the FormAPI library from here and place it in the plugins directory.
+Configure your server to use the plugin and restart the server.
 
-## Commands
-
-- `/modban {player} {days} {reason}`: Ban a player for a specified number of days with a reason.
-- `/checkmodbans {player}`: Check all bans for a specific player.
-- `/warn {player} {reason}`: Warn a player for a specific reason.
-- `/warns {player}`: Check all warnings for a specific player.
-- `/permban {player} {reason}`: Permanently ban a player with a reason.
-- `/unban {player}`: Unban a player from the server.
-
-## GUI Support
-
-Now, the plugin includes full GUI support for the ban system. Use the following command to access the GUI:
-
-- `/modbansystem`: Execute this command to open the GUI interface for managing bans and warnings.
-
-## Permissions
-
-- `mod.modban`: Permission to use the `/modban` command.
-- `mod.modbans`: Permission to use the `/checkmodbans` command.
-- `mod.warn`: Permission to use the `/warn` command.
-- `mod.permban`: Permission to use the `/permban` command.
-- `mod.unban`: Permission to use the `/unban` command.
-
-## Credits
-
-- Made by Freakingdev
-- Uploaded by BajanVlogs
-- Fixed by BajanVlogs
+This is a basic structure to get you started. You may need to customize and extend the plugin based on your specific needs. Additionally, you can enhance the plugin by adding more features, improving the ban management system, or using a database for data storage.
