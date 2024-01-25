@@ -16,7 +16,7 @@ class EventListener implements Listener {
     /**
      * @param PlayerLoginEvent $event
      */
-    public function onPlayerLogin(PlayerLoginEvent $event) {
+    public function onLogin(PlayerLoginEvent $event) {
         // Check if the player is banned and handle accordingly
         $player = $event->getPlayer();
         $name = $player->getName();
