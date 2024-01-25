@@ -1,0 +1,9 @@
+# config.yml
+
+# GUI settings
+gui_title: "Ban System"
+gui_content: "Choose an action:"
+gui_options:
+  - "Warning"
+  - "Temporary Ban"
+  - "Permanent Ban"
