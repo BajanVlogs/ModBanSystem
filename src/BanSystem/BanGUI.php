@@ -2,9 +2,11 @@
 
 namespace BanSystem;
 
-use pocketmine\form\SimpleForm;
+use pocketmine\form\Form;
 use pocketmine\Player;
 use pocketmine\utils\Config;
+use pocketmine\plugin\PluginBase;
+use pocketmine\form\SimpleForm; // Add the use statement for SimpleForm
 
 class BanGUI {
 
