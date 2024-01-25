@@ -1,11 +1,10 @@
-name: BanSystem
+name: ModBanSystem
 version: 1.0.0
-main: BanSystem\Main
-api: [3.0.0, 4.0.0]
-author: BajanDoesYT
-description: A Minecraft plugin with GUI ban system.
+api: 3.0.0
+main: ModBanSystem\Main
 commands:
   bansystem:
-    description: Open the Ban System GUI
-    usage: /bansystem
-
+    description: Manage bans
+    usage: '/bansystem <subcommand>'
+    permission: bansystem.command
+author: BajanDoesYT
