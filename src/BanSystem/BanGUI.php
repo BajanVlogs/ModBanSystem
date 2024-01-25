@@ -2,10 +2,9 @@
 
 namespace BanSystem;
 
-use pocketmine\form\Form;
+use pocketmine\form\SimpleForm;
 use pocketmine\Player;
 use pocketmine\utils\Config;
-use pocketmine\plugin\PluginBase;
 
 class BanGUI {
 
@@ -26,7 +25,7 @@ class BanGUI {
         $options = $config->get("gui_options", ["Warning", "Temporary Ban", "Permanent Ban"]);
 
         // Create a SimpleForm (you can use other form types too)
-        $form = new \pocketmine\form\SimpleForm(function (Player $player, $data) use ($options) {
+        $form = new SimpleForm(function (Player $player, $data) use ($options) {
             if ($data !== null) {
                 $selectedOption = $options[$data];
                 $this->handleOption($player, $selectedOption);
@@ -69,7 +68,7 @@ class BanGUI {
         $config = $this->plugin->getResource("config.yml");
         $this->plugin->saveResource("config.yml");
         if ($config !== null) {
-            $config->fclose();
+            fclose($config);
         }
     }
 }
