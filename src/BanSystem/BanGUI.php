@@ -4,6 +4,8 @@ namespace BanSystem;
 
 use pocketmine\form\Form;
 use pocketmine\Player;
+use pocketmine\utils\Config;
+use pocketmine\plugin\PluginBase;
 
 class BanGUI {
 
@@ -11,6 +13,9 @@ class BanGUI {
 
     public function __construct(Main $plugin) {
         $this->plugin = $plugin;
+
+        // Ensure the config file is copied from resources to the data folder
+        $this->saveDefaultConfig();
     }
 
     public function openBanGUI(Player $player) {
@@ -56,6 +61,15 @@ class BanGUI {
                 // Handle permanent ban action
                 break;
             // Add more cases as needed
+        }
+    }
+
+    // Function to copy the default config from resources to the data folder
+    private function saveDefaultConfig() {
+        $config = $this->plugin->getResource("config.yml");
+        $this->plugin->saveResource("config.yml");
+        if ($config !== null) {
+            $config->fclose();
         }
     }
 }
